@@ -98,6 +98,9 @@ air_dodge_sound = asset_get("sfx_quick_dodge");
 bubble_x = 0;
 bubble_y = 8;
 
+//crawl
+is_crawling = false;
+
 
 killarticles = false;
 

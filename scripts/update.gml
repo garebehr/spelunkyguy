@@ -23,7 +23,29 @@ else
 }
 
 
-
+//crawling
+if(state == PS_CROUCH){
+	can_move = true;
+	if(right_down){  // moving right
+		spr_dir = 1;
+		hsp = 1;
+		is_crawling = true; 
+	}
+	
+	if(left_down){  // moving left
+		spr_dir = -1;
+		hsp = -1;
+		is_crawling = true; 
+	}
+	
+	if(joy_pad_idle){ // making sure you don't move while you aren't crawling
+		hsp = 0;
+		is_crawling = false; 
+	}
+}
+else{
+	is_crawling = false;
+}
 
 
 if ((state == PS_IDLE_AIR || state == PS_IDLE || state == PS_WALK || state == PS_DASH || state == PS_FIRST_JUMP || state == PS_DOUBLE_JUMP || state == PS_WALL_JUMP) && state != PS_PRATFALL && closetorope = true && ropetimeractive = false && (down_down || up_down))
