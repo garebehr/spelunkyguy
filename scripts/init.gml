@@ -107,7 +107,7 @@ looking_up_startup_frames = 2;
 looking_up_active_frames = 1;
 looking_up_recovery_frames = 2;
 
-looking_up == false;
+looking_up = false;
 
 killarticles = false;
 
