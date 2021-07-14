@@ -23,8 +23,7 @@ if(looking_up == true){
 	}
 	
 	if(joy_pad_idle){
-		image_index = 3;
-		image_index++;
+		image_index+=3;
 	}
 	
 }
