@@ -248,68 +248,68 @@ set_color_profile_slot( 24, 4, 130, 93, 86 ); //shirt
 set_color_profile_slot( 24, 5, 0, 0, 0 ); //eyes
 set_color_profile_slot( 24, 6, 252, 208, 167 ); //shoes
 
-// Tiamat
-set_color_profile_slot( 25, 0, 94, 179, 196 ); //hat
-set_color_profile_slot( 25, 1, 159, 144, 152 ); //skin
-set_color_profile_slot( 25, 2, 159, 144, 152 ); //nose
-set_color_profile_slot( 25, 3, 186, 216, 211 ); //beard
-set_color_profile_slot( 25, 4, 186, 216, 211 ); //shirt
-set_color_profile_slot( 25, 5, 41, 44, 48 ); //eyes
-set_color_profile_slot( 25, 6, 185, 188, 190 ); //shoes
-
 // Vlad
-set_color_profile_slot( 26, 0, 221, 42, 38 ); //hat
-set_color_profile_slot( 26, 1, 243, 241, 239 ); //skin
-set_color_profile_slot( 26, 2, 243, 241, 239 ); //nose
-set_color_profile_slot( 26, 3, 243, 241, 239 ); //beard
-set_color_profile_slot( 26, 4, 117, 118, 107 ); //shirt
-set_color_profile_slot( 26, 5, 235, 51, 44 ); //eyes
-set_color_profile_slot( 26, 6, 117, 118, 107 ); //shoes
+set_color_profile_slot( 25, 0, 221, 42, 38 ); //hat
+set_color_profile_slot( 25, 1, 243, 241, 239 ); //skin
+set_color_profile_slot( 25, 2, 243, 241, 239 ); //nose
+set_color_profile_slot( 25, 3, 243, 241, 239 ); //beard
+set_color_profile_slot( 25, 4, 117, 118, 107 ); //shirt
+set_color_profile_slot( 25, 5, 235, 51, 44 ); //eyes
+set_color_profile_slot( 25, 6, 117, 118, 107 ); //shoes
 
 // caveman
-set_color_profile_slot( 27, 0, 101, 54, 18 ); //hat
-set_color_profile_slot( 27, 1, 246, 197, 154 ); //skin
-set_color_profile_slot( 27, 2, 251, 133, 133 ); //nose
-set_color_profile_slot( 27, 3, 101, 54, 18 ); //beard
-set_color_profile_slot( 27, 4, 246, 197, 154 ); //shirt
-set_color_profile_slot( 27, 5, 0, 0, 0 ); //eyes
-set_color_profile_slot( 27, 6, 246, 197, 154 ); //shoes
-
-// Quillback
-set_color_profile_slot( 28, 0, 140, 103, 81 ); //hat
-set_color_profile_slot( 28, 1, 0, 0, 0 ); //skin
-set_color_profile_slot( 28, 2, 251, 133, 133 ); //nose
-set_color_profile_slot( 28, 3, 98, 54, 23 ); //beard
-set_color_profile_slot( 28, 4, 98, 54, 23 ); //shirt
-set_color_profile_slot( 28, 5, 240, 237, 231 ); //eyes
-set_color_profile_slot( 28, 6, 246, 197, 154 ); //shoes
-
-// Anubis
-set_color_profile_slot( 29, 0, 85, 132, 230 ); //hat
-set_color_profile_slot( 29, 1, 118, 127, 154 ); //skin
-set_color_profile_slot( 29, 2, 51, 58, 77 ); //nose
-set_color_profile_slot( 29, 3, 118, 127, 154 ); //beard
-set_color_profile_slot( 29, 4, 243, 228, 85 ); //shirt
-set_color_profile_slot( 29, 5, 0, 0, 0 ); //eyes
-set_color_profile_slot( 29, 6, 68, 92, 131 ); //shoes
+set_color_profile_slot( 26, 0, 101, 54, 18 ); //hat
+set_color_profile_slot( 26, 1, 246, 197, 154 ); //skin
+set_color_profile_slot( 26, 2, 251, 133, 133 ); //nose
+set_color_profile_slot( 26, 3, 101, 54, 18 ); //beard
+set_color_profile_slot( 26, 4, 246, 197, 154 ); //shirt
+set_color_profile_slot( 26, 5, 0, 0, 0 ); //eyes
+set_color_profile_slot( 26, 6, 246, 197, 154 ); //shoes
 
 // Leprechaun
-set_color_profile_slot( 30, 0, 19, 156, 110 ); //hat
-set_color_profile_slot( 30, 1, 254, 208, 164 ); //skin
-set_color_profile_slot( 30, 2, 246, 145, 129 ); //nose
-set_color_profile_slot( 30, 3, 253, 236, 223 ); //beard
-set_color_profile_slot( 30, 4, 187, 142, 99 ); //shirt
-set_color_profile_slot( 30, 5, 0, 0, 0 ); //eyes
-set_color_profile_slot( 30, 6, 187, 142, 99 ); //shoes
+set_color_profile_slot( 27, 0, 19, 156, 110 ); //hat
+set_color_profile_slot( 27, 1, 254, 208, 164 ); //skin
+set_color_profile_slot( 27, 2, 246, 145, 129 ); //nose
+set_color_profile_slot( 27, 3, 253, 236, 223 ); //beard
+set_color_profile_slot( 27, 4, 187, 142, 99 ); //shirt
+set_color_profile_slot( 27, 5, 0, 0, 0 ); //eyes
+set_color_profile_slot( 27, 6, 187, 142, 99 ); //shoes
 
 // Monty
-set_color_profile_slot( 31, 0, 223, 205, 176 ); //hat
-set_color_profile_slot( 31, 1, 223, 205, 176 ); //skin
-set_color_profile_slot( 31, 2, 53, 54, 53 ); //nose
-set_color_profile_slot( 31, 3, 73, 72, 73 ); //beard
-set_color_profile_slot( 31, 4, 231, 75, 58 ); //shirt
-set_color_profile_slot( 31, 5, 0, 1, 1 ); //eyes
-set_color_profile_slot( 31, 6, 223, 205, 176 ); //shoes
+set_color_profile_slot( 28, 0, 223, 205, 176 ); //hat
+set_color_profile_slot( 28, 1, 223, 205, 176 ); //skin
+set_color_profile_slot( 28, 2, 53, 54, 53 ); //nose
+set_color_profile_slot( 28, 3, 73, 72, 73 ); //beard
+set_color_profile_slot( 28, 4, 231, 75, 58 ); //shirt
+set_color_profile_slot( 28, 5, 0, 1, 1 ); //eyes
+set_color_profile_slot( 28, 6, 223, 205, 176 ); //shoes
+
+// Abyss
+set_color_profile_slot( 29, 0, 87, 85, 149 ); //hat
+set_color_profile_slot( 29, 1, 164, 172, 215 ); //skin
+set_color_profile_slot( 29, 2, 88, 130, 194 ); //nose
+set_color_profile_slot( 29, 3, 78, 60, 92 ); //beard
+set_color_profile_slot( 29, 4, 78, 60, 92 ); //shirt
+set_color_profile_slot( 29, 5, 0, 1, 2 ); //eyes
+set_color_profile_slot( 29, 6, 87, 85, 149 ); //shoes
+
+// Early Access
+set_color_profile_slot( 30, 0, 31, 63, 45 ); //hat
+set_color_profile_slot( 30, 1, 212, 228, 155 ); //skin
+set_color_profile_slot( 30, 2, 169, 187, 73 ); //nose
+set_color_profile_slot( 30, 3, 31, 63, 45 ); //beard
+set_color_profile_slot( 30, 4, 169, 187, 73 ); //shirt
+set_color_profile_slot( 30, 5, 31, 63, 45 ); //eyes
+set_color_profile_slot( 30, 6, 31, 63, 45 ); //shoes
+
+// Trans Rights
+set_color_profile_slot( 31, 0, 93, 204, 251 ); //hat
+set_color_profile_slot( 31, 1, 224, 168, 130 ); //skin
+set_color_profile_slot( 31, 2, 251, 133, 133 ); //nose
+set_color_profile_slot( 31, 3, 90, 52, 29 ); //beard
+set_color_profile_slot( 31, 4, 246, 166, 185 ); //shirt
+set_color_profile_slot( 31, 5, 43, 21, 7 ); //eyes
+set_color_profile_slot( 31, 6, 251, 250, 250 ); //shoes
 
 
 /* This is a comment used by that one RoA colors.gml generator tool to store palette data. You can safely keep it in your colors.gml if you plan to re-use the tool later, or safely remove it if you don't.
