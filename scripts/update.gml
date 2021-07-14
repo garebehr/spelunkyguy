@@ -1,28 +1,3 @@
-//ROPES
-
-if (state != PS_ATTACK_GROUND)
-{
-   // found_rope is the rope you are currently touching
-   var found_rope = noone
-   with (obj_article1) if (player_id == other)
-    {
-        if state == 3 {
-            closetorope = false;
-        } else if place_meeting(x,y,other) {
-      //maybe check for closest rope directly?
-     {
-         found_rope = self;
-         break;
-      }
-   }}
-    closetorope = (noone != found_rope)
-} 
-else 
-{
-    closetorope = false;
-}
-
-
 //crawling
 if(state == PS_CROUCH){
 	can_move = true;
@@ -45,6 +20,31 @@ if(state == PS_CROUCH){
 }
 else{
 	is_crawling = false;
+}
+
+
+//ROPES
+
+if (state != PS_ATTACK_GROUND)
+{
+   // found_rope is the rope you are currently touching
+   var found_rope = noone
+   with (obj_article1) if (player_id == other)
+    {
+        if state == 3 {
+            closetorope = false;
+        } else if place_meeting(x,y,other) {
+      //maybe check for closest rope directly?
+     {
+         found_rope = self;
+         break;
+      }
+   }}
+    closetorope = (noone != found_rope)
+} 
+else 
+{
+    closetorope = false;
 }
 
 
@@ -121,4 +121,3 @@ if (holding_bomb_id != noone)
     }
 }
 //==================================
-
