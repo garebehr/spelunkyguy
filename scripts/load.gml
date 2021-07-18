@@ -1,6 +1,12 @@
 sprite_change_offset("idle", 32, 76);
 sprite_change_offset("looking_up", 32, 76);
-sprite_change_offset("hurt", 32, 62);
+
+sprite_change_offset("hurt", 38, 76);
+sprite_change_offset("bighurt", 38, 76);
+sprite_change_offset("uphurt", 38, 76);
+sprite_change_offset("downhurt", 38, 76);
+sprite_change_offset("bouncehurt", 38, 76);
+
 sprite_change_offset("crouch", 32, 76);
 sprite_change_offset("crawl", 32, 76);
 sprite_change_offset("walk", 32, 76);
