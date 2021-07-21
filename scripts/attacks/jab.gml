@@ -6,13 +6,14 @@ set_window_value(AT_JAB, 1, AG_WINDOW_TYPE, 1);
 set_window_value(AT_JAB, 1, AG_WINDOW_LENGTH, 6);
 set_window_value(AT_JAB, 1, AG_WINDOW_ANIM_FRAMES, 3);
 set_window_value(AT_JAB, 1, AG_WINDOW_HAS_SFX, 1);
-set_window_value(AT_JAB, 1, AG_WINDOW_SFX_FRAME, 5);
-set_window_value(AT_JAB, 1, AG_WINDOW_SFX, sound_get("whip"));
+set_window_value(AT_JAB, 1, AG_WINDOW_SFX, sound_get("whip_ready"));
 
 set_window_value(AT_JAB, 2, AG_WINDOW_TYPE, 1);
 set_window_value(AT_JAB, 2, AG_WINDOW_LENGTH, 8);
 set_window_value(AT_JAB, 2, AG_WINDOW_ANIM_FRAMES, 4);
 set_window_value(AT_JAB, 2, AG_WINDOW_ANIM_FRAME_START, 3);
+set_window_value(AT_JAB, 2, AG_WINDOW_HAS_SFX, 1);
+set_window_value(AT_JAB, 2, AG_WINDOW_SFX, sound_get("whip_smacc"));
 
 set_window_value(AT_JAB, 3, AG_WINDOW_TYPE, 1);
 set_window_value(AT_JAB, 3, AG_WINDOW_LENGTH, 7);

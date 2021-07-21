@@ -87,11 +87,11 @@ roll_back_recovery_frames = 2;
 roll_forward_max = 9; //roll speed
 roll_backward_max = 9;
 
-land_sound = asset_get("sfx_land_med");
-landing_lag_sound = asset_get("sfx_land");
-waveland_sound = asset_get("sfx_waveland_zet");
-jump_sound = asset_get("sfx_jumpground");
-djump_sound = asset_get("sfx_jumpair");
+land_sound = sound_get("land");
+landing_lag_sound = sound_get("land");
+waveland_sound = sound_get("sfx_waveland_zet");
+jump_sound = sound_get("jump");
+djump_sound = sound_get("jump_cape");
 air_dodge_sound = asset_get("sfx_quick_dodge");
 
 //visual offsets for when you're in Ranno's bubble
