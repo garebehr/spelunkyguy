@@ -1,3 +1,7 @@
+if(state == PS_HITSTUN){
+	item_select = 0;
+}
+
 //crawling
 if(state == PS_CROUCH){
 	can_move = true;

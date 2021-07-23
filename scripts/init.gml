@@ -111,6 +111,8 @@ looking_up = false;
 
 killarticles = false;
 
+itemselect = 0;
+itemgettimer = 1;
 
 //================================
 //ropes stuff

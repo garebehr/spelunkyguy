@@ -3,14 +3,26 @@ if (attack == AT_NSPECIAL || attack == AT_FSPECIAL || attack == AT_DSPECIAL || a
     trigger_b_reverse();
 }
 
-if (attack == AT_NSPECIAL){
-    if (window == 3){
-        if (special_pressed){
-            window = 1;
-            window_timer = 0;
-        }
-    }
+if (attack == AT_NSPECIAL && window == 2 && window_timer == 1){
+   itemselect = 0;
+   itemselect = random_func(0, 1500, true);
 }
+
+ //Bomb Bag  
+   if (attack == AT_NSPECIAL)
+    if (itemselect > 0 && itemselect < 500) {
+        if (window == 2 && window_timer == 2){
+            sound_play(sound_get("itemget"));
+            bombstock += 3;
+        }
+   } 
+   //Bomb Box 
+   else if (itemselect > 500 && itemselect < 1000){
+        if (window == 2 && window_timer == 2){
+            sound_play(sound_get("itemget"));
+            bombstock += 12;
+   }
+   }
 
 if (attack == AT_FSPECIAL){
     if (window == 2){

@@ -52,7 +52,7 @@ sprite_change_offset("taunt", 32, 62);
 
 sprite_change_offset("plat", 64, 94);
 
-sprite_change_offset("nspecial_proj", 64, 94);
+sprite_change_offset("items", 40, 40);
 sprite_change_offset("ropeproj", 32, 90);
 sprite_change_offset("ropeidle", 30, 82);
 sprite_change_offset("ropeform", 30, 82);
