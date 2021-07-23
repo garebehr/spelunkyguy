@@ -111,9 +111,6 @@ looking_up = false;
 
 killarticles = false;
 
-itemselect = 0;
-itemgettimer = 1;
-
 //================================
 //ropes stuff
 ropestock = 4;
@@ -130,3 +127,28 @@ bombstock_max = 4;
 bombstock = bombstock_max;
 holding_bomb_id = noone;  //the bomb you're currently holding (if any)
 
+
+//================================
+// NSPECIAL Item data
+items_sprite = sprite_get("items");
+                                       //name, weight, sprite, subimage, animation 
+nspecial_itemlist[0] = make_nspecial_item("bomb bag", 10, items_sprite, 2, 1);
+nspecial_itemlist[1] = make_nspecial_item("bomb box",  3, items_sprite, 3, 1);
+nspecial_itemlist[2] = make_nspecial_item("rope",     10, items_sprite, 7, 1);
+
+itemselect = 0;
+unsafe_itemgettimer = 0; //WARNING! runs in draw-time, not game-time. NEVER USE ON GAMEPLAY STUFF or INSTANT DESYNC
+itemgettimer_max = 10;
+
+//================================================
+#define make_nspecial_item(name, weight, sprite, image, anim_frames)
+{
+    return { name: name, 
+             base_weight: weight, 
+             weight: weight, 
+             image: image,
+             sprite: sprite,
+             anim_frames: anim_frames
+           }
+}
+//=================================================

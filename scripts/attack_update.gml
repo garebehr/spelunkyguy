@@ -3,26 +3,33 @@ if (attack == AT_NSPECIAL || attack == AT_FSPECIAL || attack == AT_DSPECIAL || a
     trigger_b_reverse();
 }
 
-if (attack == AT_NSPECIAL && window == 2 && window_timer == 1){
-   itemselect = 0;
-   itemselect = random_func(0, 1500, true);
-}
+if (attack == AT_NSPECIAL)
+{
+    if (window == 2 && window_timer == 2)
+    {
+        //rolls with weighted random
+        itemselect = roll_nspecial_item(nspecial_itemlist);
 
- //Bomb Bag  
-   if (attack == AT_NSPECIAL)
-    if (itemselect > 0 && itemselect < 500) {
-        if (window == 2 && window_timer == 2){
-            sound_play(sound_get("itemget"));
-            bombstock += 3;
+        unsafe_itemgettimer = itemgettimer_max; //displays the item
+        sound_play(sound_get("itemget"));
+
+        switch (itemselect)
+        {
+            //see array in init. 
+            case 0: //bomb bag
+                bombstock += 3;
+            break;
+            case 1: //bomb box
+                bombstock += 12;
+            break;
+            case 2: //rope
+                ropestock += 2;
+            break;
+            default: //!?
+            break;
         }
-   } 
-   //Bomb Box 
-   else if (itemselect > 500 && itemselect < 1000){
-        if (window == 2 && window_timer == 2){
-            sound_play(sound_get("itemget"));
-            bombstock += 12;
-   }
-   }
+    }
+}
 
 if (attack == AT_FSPECIAL){
     if (window == 2){
@@ -109,4 +116,29 @@ if (attack == AT_DSPECIAL)
             holding_bomb_id = noone;
         }
     }
+}
+
+//==================================================
+#define roll_nspecial_item(itemlist)
+{
+    var i = 0;
+    var total_weights = 0;
+    for (i = 0; i < array_length(itemlist); i++)
+    {
+        total_weights += max(0, itemlist[i].weight);
+    }
+
+    var rolled_value = random_func(8, total_weights, true);
+
+    for (i = 0; i < array_length(itemlist); i++)
+    {
+        rolled_value -= max(0, itemlist[i].weight);
+        if (rolled_value < 0)
+        {
+            return i;
+        }
+    }
+
+    //failsafe: reached end of array without picking a value!?
+    return i;
 }
