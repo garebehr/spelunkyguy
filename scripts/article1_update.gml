@@ -50,7 +50,7 @@ if (place_meeting(x, y, asset_get("plasma_field_obj")) && !(state == 3 || state 
 
 //Set killarticles to true in death.gml and all your articles will despawn. Gets reset to the false at the end of state 2
 
-if (player_id.killarticles && state != 2){
+if (player_id.killarticles && state != 2 && state != 3){
     state = 2;
     state_timer = 0;
 }
@@ -89,7 +89,7 @@ if (state == 1){
     hsp = 0;
     
     //Die if should die
-    if shoulddie{
+    if shoulddie {
         state = 2;
         state_timer = 0;
     }

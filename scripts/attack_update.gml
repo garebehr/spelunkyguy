@@ -25,6 +25,16 @@ if (attack == AT_NSPECIAL)
             case 2: //rope
                 ropestock += 2;
             break;
+            case 3: //spring shoes
+                jump_sound = sound_get("spring");
+                jump_speed = 15;
+            break;
+            case 4: //royal jelly
+                take_damage( player, -1, -10 );
+                sound_play(sound_get("heal"));
+            break;
+            case 5: //climbing gloves
+                can_wall_cling = true;
             default: //!?
             break;
         }

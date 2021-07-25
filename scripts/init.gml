@@ -24,7 +24,7 @@ ground_friction = .5;
 moonwalk_accel = 1.4;
 
 jump_start_time = 5;
-jump_speed = 13;
+jump_speed = 12;
 short_hop_speed = 8;
 djump_speed = 12;
 leave_ground_max = 7; //the maximum hsp you can have when you go from grounded to aerial without jumping
@@ -39,6 +39,7 @@ double_jump_time = 32; //the number of frames to play the djump animation. Can't
 walljump_hsp = 7;
 walljump_vsp = 11;
 walljump_time = 32;
+can_wall_cling = false;
 max_fall = 13; //maximum fall speed without fastfalling
 fast_fall = 16; //fast fall speed
 gravity_speed = .65;
@@ -135,6 +136,9 @@ items_sprite = sprite_get("items");
 nspecial_itemlist[0] = make_nspecial_item("bomb bag", 10, items_sprite, 2, 1);
 nspecial_itemlist[1] = make_nspecial_item("bomb box",  3, items_sprite, 3, 1);
 nspecial_itemlist[2] = make_nspecial_item("rope",     10, items_sprite, 7, 1);
+nspecial_itemlist[3] = make_nspecial_item("spring shoes",     5, items_sprite, 12, 1);
+nspecial_itemlist[4] = make_nspecial_item("royal jelly",     3, items_sprite, 16, 1);
+nspecial_itemlist[5] = make_nspecial_item("climbing gloves",     5, items_sprite, 14, 1);
 
 itemselect = 0;
 unsafe_itemgettimer = 0; //WARNING! runs in draw-time, not game-time. NEVER USE ON GAMEPLAY STUFF or INSTANT DESYNC

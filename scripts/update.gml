@@ -1,6 +1,19 @@
+
+//==================================
+//NSPECIAL
 if(state == PS_HITSTUN){
 	item_select = 0;
+	char_height = 52;
 }
+
+if (attack == AT_NSPECIAL && window == 2){
+	char_height = 102;
+} else if (window == 3 && window_timer == 15){
+	char_height = 52;
+	move_cooldown[AT_NSPECIAL] = 45;
+}
+//==================================
+
 
 //crawling
 if(state == PS_CROUCH){
