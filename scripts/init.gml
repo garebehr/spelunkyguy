@@ -111,6 +111,7 @@ looking_up_recovery_frames = 2;
 looking_up = false;
 
 killarticles = false;
+shoulddie = false;
 
 //================================
 //ropes stuff
@@ -130,19 +131,26 @@ holding_bomb_id = noone;  //the bomb you're currently holding (if any)
 
 
 //================================
-// NSPECIAL Item data
+// NSPECIAL Item data / Variables
 items_sprite = sprite_get("items");
                                        //name, weight, sprite, subimage, animation 
 nspecial_itemlist[0] = make_nspecial_item("bomb bag", 10, items_sprite, 2, 1);
 nspecial_itemlist[1] = make_nspecial_item("bomb box",  3, items_sprite, 3, 1);
 nspecial_itemlist[2] = make_nspecial_item("rope",     10, items_sprite, 7, 1);
 nspecial_itemlist[3] = make_nspecial_item("spring shoes",     5, items_sprite, 12, 1);
-nspecial_itemlist[4] = make_nspecial_item("royal jelly",     3, items_sprite, 16, 1);
-nspecial_itemlist[5] = make_nspecial_item("climbing gloves",     5, items_sprite, 14, 1);
+nspecial_itemlist[4] = make_nspecial_item("royal jelly",     2, items_sprite, 16, 1);
+nspecial_itemlist[5] = make_nspecial_item("climbing gloves",     4, items_sprite, 14, 1);
+nspecial_itemlist[6] = make_nspecial_item("turkey",     4, items_sprite, 18, 1);
+nspecial_itemlist[7] = make_nspecial_item("kapalla",     10, items_sprite, 8, 1);
+nspecial_itemlist[8] = make_nspecial_item("specs",     5, items_sprite, 6, 1);
 
 itemselect = 0;
 unsafe_itemgettimer = 0; //WARNING! runs in draw-time, not game-time. NEVER USE ON GAMEPLAY STUFF or INSTANT DESYNC
 itemgettimer_max = 10;
+
+//kapalla
+haskapalla = false;
+kapalladamage = 0;
 
 //================================================
 #define make_nspecial_item(name, weight, sprite, image, anim_frames)

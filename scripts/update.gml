@@ -10,7 +10,7 @@ if (attack == AT_NSPECIAL && window == 2){
 	char_height = 102;
 } else if (window == 3 && window_timer == 15){
 	char_height = 52;
-	move_cooldown[AT_NSPECIAL] = 45;
+//	move_cooldown[AT_NSPECIAL] = 45;
 }
 //==================================
 
@@ -138,3 +138,11 @@ if (holding_bomb_id != noone)
     }
 }
 //==================================
+
+//=================================
+//kapalla
+if kapalladamage > 10 {
+	    take_damage( player, -1, -1 );
+        sound_play(sound_get("bloodheal"));
+        kapalladamage = 0;
+}

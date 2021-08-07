@@ -12,3 +12,7 @@ if (my_hitboxID.attack == AT_DSPECIAL && my_hitboxID.hbox_num == 1)
     //...maybe for a "double-donk" easter egg? up to you
     bomb.has_hit = true;
 }
+
+if haskapalla = true {
+    kapalladamage += my_hitboxID.damage;
+}

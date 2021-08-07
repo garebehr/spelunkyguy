@@ -100,6 +100,7 @@ if (state == 1){
     	state = 2;
     	state_timer = 0;
     } 
+
     
 /*
 with (oPlayer){

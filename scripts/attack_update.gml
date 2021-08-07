@@ -31,10 +31,22 @@ if (attack == AT_NSPECIAL)
             break;
             case 4: //royal jelly
                 take_damage( player, -1, -10 );
+                sound_stop(sound_get("itemget"));
                 sound_play(sound_get("heal"));
             break;
             case 5: //climbing gloves
                 can_wall_cling = true;
+            break;
+            case 6: //turkey
+                take_damage( player, -1, -5 );
+                sound_stop(sound_get("itemget"));
+                sound_play(sound_get("heal"));
+            break;
+            case 7: //kapalla
+                haskapalla = true;
+            break;
+            case 8: //specs
+                //lol
             default: //!?
             break;
         }
@@ -53,8 +65,12 @@ if (attack == AT_FSPECIAL){
 }
 
 
-if (attack == AT_USPECIAL && window == 2 && window_timer == 1){
+if (attack == AT_USPECIAL){
+    if window == 1 && window_timer == 1 {
+        killarticles = false;
+    } else if window == 2 && window_timer == 1 {
     ropestock -= 1;
+}
 }
 
 if (attack == AT_USPECIAL && window == 2 && special_down){

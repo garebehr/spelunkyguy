@@ -11,6 +11,8 @@ bombstock = bombstock_max;
     char_height = 52;
     jump_sound = sound_get("jump");
     jump_speed = 12;
+    haskapalla = false;
+    kapalladamage = 0;
 
 //=========================================
 //dropping the bomb
