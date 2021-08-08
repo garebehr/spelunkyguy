@@ -41,7 +41,7 @@ sprite_change_offset("fair", 64, 94);
 sprite_change_offset("bair", 64, 94);
 sprite_change_offset("uair", 76, 100);
 sprite_change_offset("dair", 64, 94);
-sprite_change_offset("fstrong", 64, 94);
+sprite_change_offset("fstrong", 106, 100);
 sprite_change_offset("ustrong", 64, 158);
 sprite_change_offset("dstrong", 64, 94);
 sprite_change_offset("nspecial", 64, 94);
@@ -63,5 +63,6 @@ sprite_change_offset("ropedestroy2", 30, 82);
 sprite_change_offset("bombidle", 35, 40);
 sprite_change_offset("bombmask", 35, 40);
 sprite_change_offset("bombexplode", 35, 40);
+sprite_change_offset("egg_proj", 35, 40);
 
 set_victory_theme( sound_get( "victory" ));

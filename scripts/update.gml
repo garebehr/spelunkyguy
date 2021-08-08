@@ -12,6 +12,7 @@ if (attack == AT_NSPECIAL && window == 2){
 	char_height = 52;
 //	move_cooldown[AT_NSPECIAL] = 45;
 }
+
 //==================================
 
 

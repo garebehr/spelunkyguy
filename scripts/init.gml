@@ -141,8 +141,9 @@ nspecial_itemlist[3] = make_nspecial_item("spring shoes",     5, items_sprite, 1
 nspecial_itemlist[4] = make_nspecial_item("royal jelly",     2, items_sprite, 16, 1);
 nspecial_itemlist[5] = make_nspecial_item("climbing gloves",     4, items_sprite, 14, 1);
 nspecial_itemlist[6] = make_nspecial_item("turkey",     4, items_sprite, 18, 1);
-nspecial_itemlist[7] = make_nspecial_item("kapalla",     10, items_sprite, 8, 1);
+nspecial_itemlist[7] = make_nspecial_item("kapalla",     1, items_sprite, 8, 1);
 nspecial_itemlist[8] = make_nspecial_item("specs",     5, items_sprite, 6, 1);
+nspecial_itemlist[9] = make_nspecial_item("eggplant crown",     10, items_sprite, 19, 1);
 
 itemselect = 0;
 unsafe_itemgettimer = 0; //WARNING! runs in draw-time, not game-time. NEVER USE ON GAMEPLAY STUFF or INSTANT DESYNC
@@ -151,6 +152,9 @@ itemgettimer_max = 10;
 //kapalla
 haskapalla = false;
 kapalladamage = 0;
+//eggcrown
+haseggcrown = false;
+
 
 //================================================
 #define make_nspecial_item(name, weight, sprite, image, anim_frames)

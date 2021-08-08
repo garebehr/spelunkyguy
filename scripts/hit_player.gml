@@ -13,6 +13,12 @@ if (my_hitboxID.attack == AT_DSPECIAL && my_hitboxID.hbox_num == 1)
     bomb.has_hit = true;
 }
 
+if(my_hitboxID.attack == AT_NSPECIAL_2) {
+    if (my_hitboxID.hbox_num == 1) {
+        sound_play(sound_get("eggplantbreak"))
+    }
+}
+
 if haskapalla = true {
     kapalladamage += my_hitboxID.damage;
 }

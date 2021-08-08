@@ -3,6 +3,15 @@ if (attack == AT_NSPECIAL || attack == AT_FSPECIAL || attack == AT_DSPECIAL || a
     trigger_b_reverse();
 }
 
+//==================================================
+//attack sounds
+if (attack == AT_FSTRONG){
+    if window == 1 && window_timer == (3) {
+            sound_play(sound_get("pickupshotgun"));
+    }
+}
+
+
 if (attack == AT_NSPECIAL)
 {
     if (window == 2 && window_timer == 2)
@@ -47,11 +56,15 @@ if (attack == AT_NSPECIAL)
             break;
             case 8: //specs
                 //lol
+            break;
+            case 9: //eggplantcrown
+                haseggcrown = true;
             default: //!?
             break;
         }
     }
 }
+
 
 if (attack == AT_FSPECIAL){
     if (window == 2){
@@ -168,3 +181,5 @@ if (attack == AT_DSPECIAL)
     //failsafe: reached end of array without picking a value!?
     return i;
 }
+
+
