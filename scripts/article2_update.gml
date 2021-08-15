@@ -34,6 +34,9 @@ with (asset_get("pHitBox"))
 }
 */
 
+print(free);
+
+
 // Respond to a request to change states
 if (bufferedstate != STATE_NONE)
 {
@@ -71,6 +74,12 @@ switch (state)
 //======================================================
 	case STATE_THROW: //Thrown
 	{
+					if player_id.haspaste = true && !free {
+			hsp = 0;
+			vsp = 0;
+			sound_play(sound_get("pastestick"));
+			set_state(STATE_IDLE);
+	} 
 		if (state_timer <= 1)
 		{
 	    	//spawn the throwing hitbox
@@ -81,6 +90,7 @@ switch (state)
 		do_gravity();
 		do_friction();
 		do_bounce();
+
 		
 		//once we touch the ground, go to IDLE state.
 		if (!free) 
@@ -91,10 +101,19 @@ switch (state)
 //======================================================
 	case STATE_IDLE: //Idle
 	{
-		//apply physics
+					if player_id.haspaste = true && !free {
+			hsp = 0;
+			vsp = 0;
+			//sound_play
+	} 
+			if player_id.haspaste = false {	
 		do_gravity();
 		do_friction();
-		do_bounce();
+		do_bounce(); 
+		} else {
+		vsp = 0;
+		hsp = 0;
+		} 
 	}break;
 //======================================================
 	case STATE_BOOM: //Exploding

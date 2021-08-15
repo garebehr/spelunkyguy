@@ -8,6 +8,7 @@
 //draw_debug_text(x, y + 35, "ropetimeractive:" +string(ropetimeractive));
 //draw_debug_text(x, y + 35, "itemselect:" +string(itemselect));
 //draw_debug_text(x, y + 55, "bombstock:" +string(bombstock));
+draw_debug_text(x, y + 55, "has paste:" +string(haspaste));
 
 
 user_event(11);

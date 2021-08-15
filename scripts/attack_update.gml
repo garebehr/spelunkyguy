@@ -59,6 +59,10 @@ if (attack == AT_NSPECIAL)
             break;
             case 9: //eggplantcrown
                 haseggcrown = true;
+            break;
+            case 10: //paste
+                haspaste = true;
+            break;
             default: //!?
             break;
         }

@@ -13,6 +13,7 @@ bombstock = bombstock_max;
     jump_speed = 12;
     haskapalla = false;
     kapalladamage = 0;
+    haspaste = false;
 
 //=========================================
 //dropping the bomb

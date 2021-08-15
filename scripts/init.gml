@@ -143,7 +143,8 @@ nspecial_itemlist[5] = make_nspecial_item("climbing gloves",     4, items_sprite
 nspecial_itemlist[6] = make_nspecial_item("turkey",     4, items_sprite, 18, 1);
 nspecial_itemlist[7] = make_nspecial_item("kapalla",     1, items_sprite, 8, 1);
 nspecial_itemlist[8] = make_nspecial_item("specs",     5, items_sprite, 6, 1);
-nspecial_itemlist[9] = make_nspecial_item("eggplant crown",     10, items_sprite, 19, 1);
+nspecial_itemlist[9] = make_nspecial_item("eggplant crown",     1, items_sprite, 19, 1);
+nspecial_itemlist[10] = make_nspecial_item("paste",     10, items_sprite, 5, 1);
 
 itemselect = 0;
 unsafe_itemgettimer = 0; //WARNING! runs in draw-time, not game-time. NEVER USE ON GAMEPLAY STUFF or INSTANT DESYNC
@@ -154,6 +155,8 @@ haskapalla = false;
 kapalladamage = 0;
 //eggcrown
 haseggcrown = false;
+//paste
+haspaste = false;
 
 
 //================================================
