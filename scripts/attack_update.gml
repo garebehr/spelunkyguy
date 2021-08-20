@@ -14,7 +14,7 @@ if (attack == AT_FSTRONG){
 
 if (attack == AT_NSPECIAL)
 {
-    if (window == 2 && window_timer == 2)
+    if (window == 2 && window_timer == 1)
     {
         //rolls with weighted random
         itemselect = roll_nspecial_item(nspecial_itemlist);
