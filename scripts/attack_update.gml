@@ -117,7 +117,7 @@ if (attack == AT_DSPECIAL)
             window_timer = 0;
         }
     }
-    if (window == 2 && window_timer == 1)
+    if (window == 2 && window_timer == 4)
     {
         if (holding_bomb_id == noone)
         {
@@ -125,7 +125,7 @@ if (attack == AT_DSPECIAL)
             if (bombstock > 0)
             {
                 //create a new bomb if you dont have one
-                holding_bomb_id = instance_create(x, y-24, "obj_article2");
+                holding_bomb_id = instance_create(x+18, y-36, "obj_article2");
                 bombstock--; //consumes one stock
             }
             else 
