@@ -125,7 +125,11 @@ if (attack == AT_DSPECIAL)
             if (bombstock > 0)
             {
                 //create a new bomb if you dont have one
+              if spr_dir = -1 {
                 holding_bomb_id = instance_create(x+18, y-36, "obj_article2");
+              } else {
+                holding_bomb_id = instance_create(x-18, y-36, "obj_article2");
+              }
                 bombstock--; //consumes one stock
             }
             else 
