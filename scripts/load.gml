@@ -32,10 +32,10 @@ sprite_change_offset("waveland", 38, 76);
 sprite_change_offset("tech", 32, 62);
 
 sprite_change_offset("jab", 60, 88);
-sprite_change_offset("dattack", 64, 94);
+sprite_change_offset("dattack", 84, 64);
 sprite_change_offset("ftilt", 32, 62);
 sprite_change_offset("dtilt", 66, 88);
-sprite_change_offset("utilt", 64, 94);
+sprite_change_offset("utilt", 30, 110);
 sprite_change_offset("nair", 54, 90);
 sprite_change_offset("fair", 64, 94);
 sprite_change_offset("bair", 64, 94);
@@ -46,7 +46,7 @@ sprite_change_offset("ustrong", 64, 158);
 sprite_change_offset("dstrong", 64, 94);
 sprite_change_offset("nspecial", 74, 100);
 sprite_change_offset("fspecial", 64, 94);
-sprite_change_offset("uspecial", 64, 94);
+sprite_change_offset("uspecial", 44, 110);
 sprite_change_offset("dspecial", 74, 100);
 sprite_change_offset("taunt", 32, 62);
 
